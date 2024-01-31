@@ -1,6 +1,4 @@
-window.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('hello-kitty').style.visibility = 'hidden';
-});
+document.getElementById('hello-kitty').style.visibility = 'hidden';
 
 function showHint() {
     window.alert("What is the day we last saw each other?");
