@@ -1,11 +1,3 @@
-const elements = document.querySelectorAll("*")
-
-elements.forEach(element => {
-    if (element.classList.contains("container")) {
-        element.classList.add("hidden")
-    }
-})
-
 function showHint() {
     window.alert("What is the day we last saw each other?");
 }
