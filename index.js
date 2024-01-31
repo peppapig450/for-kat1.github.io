@@ -1,8 +1,8 @@
 const elements = document.querySelectorAll("*")
 
 elements.forEach(element => {
-    if (!element.id.contains("password-container") || !element.id.contains("protected-content")) {
-        element.classList.add("hidden");
+    if (element.classList.contains("container")) {
+        element.classList.add("hidden")
     }
 })
 
@@ -12,7 +12,7 @@ function showHint() {
 
 function unHide() {
     elements.forEach(element => {
-        if (!element.id.contains("password-container") || !element.id.contains("protected-content")) {
+        if (element.classList.contains("container")) {
             element.classList.remove("hidden");
         }
     })
@@ -24,7 +24,6 @@ function checkPassword() {
     
     if (possiblePasses.includes(passwordInput)) {
         document.getElementById("password-container").classList.add("hidden");
-        document.getElementById("protected-content").classList.add("hidden");
         unHide();
     } else {
         alert("Incorrect password. Please try again. (Use the hint)");
