@@ -1,13 +1,11 @@
+document.getElementById('hello-kitty').style.visibility = 'hidden';
+
 function showHint() {
     window.alert("What is the day we last saw each other?");
 }
 
 function unHide() {
-    elements.forEach(element => {
-        if (element.classList.contains("container")) {
-            element.classList.remove("hidden");
-        }
-    })
+    document.getElementById('hello-kitty').style.visibility = 'visible';
 }
 function checkPassword() {
     const possiblePasses = ["January 14", "January 15", "1/14", "1/15"];
