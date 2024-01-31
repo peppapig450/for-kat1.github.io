@@ -14,6 +14,7 @@ body {
     height: 400px;
     padding: 180px;
     text-align: center;
+    display: none;
 }
 
 .hello-kitty {
@@ -30,7 +31,6 @@ body {
 
 .eye-container {
     display: flex;
-    display-direction: row;
     align-items: center;
     justify-content: space-around;
 }

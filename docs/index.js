@@ -20,7 +20,7 @@ function unHide() {
 function checkPassword() {
     const possiblePasses = ["January 14", "January 15", "1/14", "1/15"];
 
-    var passwordInput = doocument.getElementById("password").value;
+    var passwordInput = document.getElementById("password").value;
     
     if (possiblePasses.includes(passwordInput)) {
         document.getElementById("password-container").classList.add("hidden");
